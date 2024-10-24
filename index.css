@@ -1,0 +1,9 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header, titre {
+    width: 1920px;
+    height: 275px;
+    background: #28658B;
+}

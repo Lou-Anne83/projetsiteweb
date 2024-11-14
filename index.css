@@ -1,76 +1,111 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     color: #333;
 }
-body, .page {
+
+header {
+    background-color: #1D5C82;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+header nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+section#accueil img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+section h2 {
+    font-size: 1.5em;
+    color: #1D5C82;
+    margin-bottom: 10px;
+}
+
+form {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
-    margin: 0;
-}
-.page{
-    flex: 1; 
+    gap: 10px;
 }
 
-.header {
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     width: 100%;
-    background-color: #28658B;
-    color: white;
-    padding: 0px 0;
-    text-align: center;
 }
 
-.header h1 {
-    margin-top: 20px; 
-    font-size: 2.5em; 
-}
-
-.ligne-epaisse {
+form button {
+    padding: 10px;
+    background-color: #1D5C82;
+    color: #FFFFFF;
     border: none;
-    height: 10px;
-    background-color: white;
-    width: 100%; 
-    margin: 15px auto;
-}
-.navigation bar{
-    
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-@media (min-width: 1024px) {
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        display: flex;
-        gap: 20px; 
+form button:hover {
+    background-color: #164A68;
 }
 
-    .sidebar {
-        width: 300px;
-        background-color: #f4f4f4;
-        padding: 20px;
-        border-radius: 5px;
-    }
-
-    .content {
-        flex: 1;
-        padding: 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .header {
-        height: 275px; 
-    }
-}
-
-.footer {
-    background: #17333e;
+footer {
+    background-color: #1D5C82;
+    color: #FFFFFF;
     padding: 20px;
-    text-align: right;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer div {
+    flex: 1;
+    min-width: 200px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a img {
+    width: 30px;
+    height: auto;
 }

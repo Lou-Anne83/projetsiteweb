@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dedal des Couleurs</title>
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <h1>DEDAL DES COULEURS</h1>
-        <nav>
-            <ul>
-                <li><a href="accueil.html">ACCUEIL</a></li>
-                <li><a href="galerie.html">GALERIE</a></li>
-                <li><a href="contact.htmls">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="page">
+            <div class="header">
+                <div class="titre"> 
+                    <h1>DÉDAL DES COULEURS</h1>
+                </div>
+                <hr class="ligne-epaisse">
+                <div class="navigation-bar">
+                    <a href="accueil.html">ACCUEIL</a>
+                    <a href="galerie.html">GALERIE</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
     </header>
      <!-- Section Contact -->
      <section id="contact">
@@ -41,14 +47,20 @@
 
     <!-- Footer -->
     <footer>
-        <div>
-            <p>Adresse : 10 Rue de la République, 75000 Paris</p>
-            <p>Contact : Tel : 01.45.48.55.56 | Fax : 01.45.48.55.52 | Email : dedal@gmail.com</p>
+        <div class="adresse">
+            <h4>ADRESSE</h4>
+            <p>10 Rue de la République, 75000 Paris</p>
         </div>
-        <div>
-            <p>À propos : Chiffre d'affaires : 1 350 000 € / an | Nombre de salariés : 3 personnes</p>
-            <a href="#"><img src="youtube-icon.png" alt="YouTube"></a>
+        <div class="contact">
+            <h4>CONTACT</h4>
+            <p>Tel : 01.45.48.55.56 | Fax : 01.45.48.55.52 <br>
+                Mail : dedal@gmail.com</p>
         </div>
+        <div class="apropos">
+            <h4>À PROPOS</h4>
+            <p>Chiffre d'affaires : 1 350 000 € / an <br> Nombre de salariés : 3 personnes</p>
+        </div>
+        <a href="https://www.youtube.com/" class="youtube-icon"><i class="fa-brands fa-youtube"></i></a>
     </footer>
 
 </body>

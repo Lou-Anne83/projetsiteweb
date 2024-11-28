@@ -37,7 +37,7 @@ header h1 {
 .navigation-bar { 
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 300px;
     padding: 0; 
 }
 
@@ -46,7 +46,7 @@ header h1 {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size:25px;
 
 }
 
@@ -104,16 +104,15 @@ header h1 {
 
 /* Footer */
 footer {
-    position: absolute;
     background-color: #403f3c;
     color: #FFFFFF;
-    padding: 10px 30px;
+    padding: 20px 30px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; 
+    justify-content: space-between; /* Sépare les colonnes et l'icône */
+    align-items: center; /* Centre verticalement les éléments */
     flex-wrap: wrap;
+    gap: 20px;
     position: relative;
-    gap: 20px; 
 }
 footer div {
     flex: 1;
@@ -137,46 +136,63 @@ footer div h4 {
 footer div p {
     line-height: 1.4;
 }
+
+
 /* Icône YouTube */
 .youtube-icon {
-    position: absolute;
-    right: 20px;
-    top: 10px; 
-    font-size: 50px; 
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: none; /* Supprime le soulignement */
 }
 .youtube-icon i {
-    font-size: 80px; 
+    font-size: 80px;
     color: white;
     transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Supprime le soulignement */
 }
 .youtube-icon i:hover {
     transform: scale(1.2);
     color: #FF0000; 
 }
 
-
-
-
-
-
-
-
-
-
-/* Responsive pour petits écrans (768px et moins) */
+/* Responsive */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
 
-    #accueil {
-        padding: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        padding: 10px;
-    }
+body {
+     overflow-x: hidden; 
 }
+
+/* Header*/ 
+.navigation-bar {
+    justify-content: space-between; 
+    gap: 15px; 
+}
+
+.navigation-bar a {
+    font-size: 18px; 
+    flex: 1; 
+    text-align: center; 
+}
+/* Contenu*/
+.forme {
+    flex-direction: column; 
+    text-align: center; 
+    font-size: 15px; 
+}
+.forme p {
+    order: 1; 
+    text-align: justify, center;
+}
+.forme h2 {
+    font-size: 20px !important; 
+}
+.forme img {
+    order: 2; 
+    width: 80%; 
+    margin: 0 0 20px 0;
+}
+}
+
+

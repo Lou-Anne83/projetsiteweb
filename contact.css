@@ -1,227 +1,70 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #28658B;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedal des Couleurs</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
-header {
-    width: 100%;
-    background-color: #28658B;
-    color: white;
-    padding: 10px 0;
-    padding-top: 5px;
-    text-align: center;
-    height: auto; 
-}
+    <!-- Header -->
+    <header>
+        <div class="page">
+            <div class="header">
+                <div class="titre"> 
+                    <h1>DÉDAL DES COULEURS</h1>
+                </div>
+                <hr class="ligne-epaisse">
+                <div class="navigation-bar">
+                    <a href="accueil.html">ACCUEIL</a>
+                    <a href="galerie.html">GALERIE</a>
+                    <a href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </div>
+    </header>
+     <!-- Section Contact -->
+     <section id="contact-container">
+        <section id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5637844064718!2d2.3617705897201615!3d48.86652802622843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e08126fa2a3%3A0x8df64dfbdee88e8a!2s10%20Av.%20de%20la%20R%C3%A9publique%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1732814064568!5m2!1sfr!2sfr" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <form action="#" method="post" class="contact-form">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required>
+           
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+           
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+           
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+           
+            <button type="submit">Soumettre</button>
+        </form>
+    </section>
 
-header h1 {
-    margin: 1px;
-    font-size: 2.5em;
-}
+    <!-- Footer -->
+    <footer>
+        <div class="adresse">
+            <h4>ADRESSE</h4>
+            <p>10 Rue de la République, 75000 Paris</p>
+        </div>
+        <div class="contact">
+            <h4>CONTACT</h4>
+            <p>Tel : 01.45.48.55.56 | Fax : 01.45.48.55.52 <br>
+                Mail : dedal@gmail.com</p>
+        </div>
+        <div class="apropos">
+            <h4>À PROPOS</h4>
+            <p>Chiffre d'affaires : 1 350 000 € / an <br> Nombre de salariés : 3 personnes</p>
+        </div>
+        <a href="https://www.youtube.com/" class="youtube-icon"><i class="fa-brands fa-youtube"></i></a>
+    </footer>
 
-.ligne-epaisse {
-    border: none;
-    height: 10px;
-    background-color: white;
-    width: 100%;
-    margin: 5px auto;
-}
-.navigation-bar { 
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0; 
-}
-
-.navigation-bar a { 
-    padding: 5px 10px; 
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.navigation-bar a:hover {
-    color:white; 
-    text-decoration: underline;
-}
-/*Contenu de la page*/
-
-section {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    background-color: white;
-    border-radius: 10px;
-}
-
-section#accueil img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
-.contact-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 60px; 
-    margin-top: 20px;
-    padding: 20px;
-}
-
-
-/* Conteneur de l'image */
-#contact-container {
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        gap: 40px;
-        margin: 20px auto; 
-        background-color: #28658B;
-        border-radius: 10px;
-        padding: 20px; 
-}
-    
-
-.contact-image {
-    flex: 0 0 45%;  
-    max-width: 70%; 
-    height: auto; 
-    display: block; 
-    margin-left: -150px; 
-}
-.contact-form {
-    width: 500px;
-    padding: 40px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 30px; 
-    flex-grow: 1;
-    margin-left: 100px;
-}
-.contact-form textarea {
-    width: 100%;
-    max-width: 100%; 
-    max-height: 400px; 
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    resize: both; 
-}
-.contact-form input, .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    width: 100%;
-}
-.contact-form, .contact-form input, .contact-form textarea {
-    box-sizing: border-box;
-}
-
-.contact-form button {
-    padding: 10px;
-    margin-top: 20px;
-    background-color: #000000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-}
-.contact-form button:hover {
-    background-color: #164A68;
-}
-form label {
-    font-weight: bold;
-    text-align: left; 
-    width: 100%; 
-    margin-bottom: 5px; 
-}
-
-
-
-
-
-/* Footer */
-footer {
-    position: absolute;
-    background-color: #403f3c;
-    color: #FFFFFF;
-    padding: 10px 30px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start; 
-    flex-wrap: wrap;
-    position: relative;
-    gap: 20px; 
-}
-footer div {
-    flex: 1;
-    min-width: 200px;
-    text-align: left;
-    margin: 0;
-    display: flex;
-    flex-direction: column; 
-}
-footer div h4, footer div p {
-    width: 100%; 
-    margin: 0; 
-    text-align: left;
-    font-weight: bold; 
-}
-footer div h4 {
-    margin-bottom: 5px; 
-    font-size: 1.1em;
-}
-footer div p {
-    line-height: 1.4;
-}
-/* Icône YouTube */
-.youtube-icon {
-    position: absolute;
-    right: 20px;
-    top: 10px; 
-    font-size: 50px; 
-    text-decoration: none;
-}
-.youtube-icon i {
-    font-size: 80px; 
-    color: white;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-.youtube-icon i:hover {
-    transform: scale(1.2);
-    color: #FF0000; 
-}
-
-/*responsive*/ 
-
-@media (max-width: 768px) {
-    #contact-container {
-        flex-direction: column; /* Passe en colonne */
-        padding: 10px; /* Réduit le padding */
-        gap: 10px; /* Réduit l'espacement */
-    }
-    .contact-image {
-        margin-left: 0; /* Supprime le décalage */
-        max-width: 100%; /* Occupe toute la largeur */
-    }
-    .contact-form {
-        max-width: 100%; /* Occupe tout l’espace */
-        margin: 0; /* Réinitialise les marges */
-    }
-}
+</body>
+</html>

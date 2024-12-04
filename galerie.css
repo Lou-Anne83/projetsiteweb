@@ -182,3 +182,73 @@ footer div p {
     transform: scale(1.2);
     color: #FF0000; 
 }
+/* Mode responsive */
+@media (max-width: 768px) {
+
+body {
+    overflow-x: hidden;
+}
+    
+/* Contact Container */
+
+#contact-container {
+    flex-direction: column;
+    gap: 20px; 
+    padding: 15px;
+}
+/*Footer*/
+
+footer{
+    position: absolute;
+    background-color: #403f3c;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+footer div {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+}
+footer div h4, footer div p {
+    width: 100%; 
+    margin: 0; 
+    text-align: left;
+    font-weight: bold; 
+}
+footer div h4 {
+    margin-bottom: 5px; 
+    font-size: 1.1em;
+}
+footer div p {
+    line-height: 1.4;
+}
+.adresse, .apropos {
+    grid-column: 1;
+}
+.contact {
+    grid-column: 2;
+}
+
+/* YouTube Icon */
+
+.youtube-icon {
+    position: absolute;
+    right: 20px;
+    top: 130px;  bottom: 20px;
+    right: 50px;
+    font-size: 50px;
+    text-decoration: none;
+}
+}

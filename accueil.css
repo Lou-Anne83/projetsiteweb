@@ -217,7 +217,7 @@ footer div {
     flex-direction: column; 
     text-align: left;
 }
-footer div h4, footer div p {
+footer div h3, footer div p {
     width: 100%; 
     margin: 0; 
     text-align: left;

@@ -182,6 +182,7 @@ footer div p {
     transform: scale(1.2);
     color: #FF0000; 
 }
+
 /* Mode responsive */
 @media (max-width: 768px) {
 
@@ -196,7 +197,7 @@ body {
     gap: 20px; 
     padding: 15px;
 }
-/*Footer*/
+
 
 footer{
     position: absolute;
@@ -251,4 +252,83 @@ footer div p {
     font-size: 50px;
     text-decoration: none;
 }
+}
+
+/* Réorganisation des grandes images en mode mobile */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Aligner en colonne */
+        gap: 20px; /* Ajuste l'espace entre les éléments */
+        margin-bottom: 30px; /* Ajout d'espace sous chaque ligne */
+        text-align: center;
+    }
+    
+    .row img {
+        width: 100%; /* Image prend toute la largeur */
+        margin-bottom: 15px; /* Espacement supplémentaire avec le texte */
+    }
+    
+    .text-content {
+        width: 100%; /* Texte également en largeur complète */
+    }
+    
+    .text-content h2 {
+        font-size: 1.4em;
+    }
+    
+    .text-content p {
+        font-size: 1em;
+        margin-top: 5px; /* Ajustement de l'espacement */
+        text-align: center;
+    }
+}
+
+/* Organisation des petites images en grille */
+@media (max-width: 768px) {
+    .small-images {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+        gap: 15px; /* Espacement entre les éléments */
+        justify-items: stretch;
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+    
+    .small-item {
+        text-align: center;     
+    }
+    
+    .small-item img {
+        width: 500%; /* Ajuster la taille des images */
+    }
+    
+    .small-item h2 {
+        font-size: 1em;
+        word-wrap: break all break-word ;
+       
+    }
+}
+
+/* Pour les très petits écrans (ex. smartphones) */
+@media (max-width: 480px) {
+    .row img {
+        width: 100%; /* Images prennent toute la largeur */
+    }
+
+    .small-item img {
+        width: 100%; /* Réduction pour les très petites tailles */
+    }
+}
+
+/* Résolution du chevauchement pour la section Galerie */
+#galerie {
+    margin-top: 20px; /* Augmenter la marge supérieure */
+    padding-top: 30px; /* Espace interne pour éviter tout chevauchement */
+}
+
+/* Espacement supplémentaire dans la section Galerie */
+.row {
+    gap: 30px; /* Ajout d'espace entre les images et les textes */
+    margin-bottom: 40px; /* Ajout d'espace sous chaque ligne */
 }

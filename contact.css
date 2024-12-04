@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header */
 header {
     width: 100%;
     background-color: #28658B;
@@ -18,7 +19,7 @@ header {
     padding: 10px 0;
     padding-top: 5px;
     text-align: center;
-    height: auto; 
+    height: auto;
 }
 
 header h1 {
@@ -33,11 +34,13 @@ header h1 {
     width: 100%;
     margin: 5px auto;
 }
+
+/* Navigation */
 .navigation-bar { 
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 0; 
+    padding: 0;
 }
 
 .navigation-bar a { 
@@ -52,8 +55,8 @@ header h1 {
     color:white; 
     text-decoration: underline;
 }
-/*Contenu de la page*/
 
+/* Contenu de la page */
 section {
     padding: 20px;
     max-width: 1000px;
@@ -68,6 +71,7 @@ section#accueil img {
     margin-top: 20px;
 }
 
+/* Conteneur Contact */
 .contact-container {
     display: flex;
     justify-content: space-between;
@@ -77,25 +81,25 @@ section#accueil img {
     padding: 20px;
 }
 
-
-/* Conteneur de l'image */
 #contact-container {
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        gap: 40px;
-        margin: 20px auto; 
-        background-color: #28658B;
-        border-radius: 10px;
-        padding: 20px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 40px;
+    margin: 20px auto; 
+    background-color: #28658B;
+    border-radius: 10px;
+    padding: 20px;
 }
-    
 
+/* Carte */
 #map-container iframe {
     width: 100%;
-    height: 400px; /* Tu peux ajuster cette hauteur selon ce qui te semble optimal */
+    height: 400px;
     border: none;
 }
+
+/* Formulaire */
 .contact-form {
     width: 500px;
     padding: 40px;
@@ -109,23 +113,26 @@ section#accueil img {
     flex-grow: 1;
     margin-left: 100px;
 }
+
 .contact-form textarea {
     width: 100%;
-    max-width: 100%; 
-    max-height: 400px; 
+    max-width: 100%;
+    max-height: 400px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    resize: both; 
+    resize: both;
 }
+
 .contact-form input, .contact-form textarea {
     padding: 10px;
     border: 1px solid #cccccc;
     border-radius: 5px;
     width: 100%;
 }
+
 .contact-form, .contact-form input, .contact-form textarea {
     box-sizing: border-box;
 }
@@ -140,9 +147,11 @@ section#accueil img {
     cursor: pointer;
     font-weight: bold;
 }
+
 .contact-form button:hover {
     background-color: #164A68;
 }
+
 form label {
     font-weight: bold;
     text-align: left; 
@@ -150,11 +159,8 @@ form label {
     margin-bottom: 5px; 
 }
 
-
-
-
-
 /* Footer */
+
 footer {
     position: absolute;
     background-color: #403f3c;
@@ -206,61 +212,107 @@ footer div p {
     color: #FF0000; 
 }
 
-/*responsive*/ 
-
-/* Responsive pour la page contact */
+/* Mode responsive */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+
+body {
+    overflow-x: hidden;
+}
     
-    /* Modification du container du contact pour plus de flexibilité */
-    #contact-container {
-        flex-direction: column;
-        gap: 15px; /* Réduit l'espace entre l'image et le formulaire */
-        padding: 10px;
-    }
+/* Contact Container */
 
-    /* Ajuster la taille de l'image */
-    .contact-image {
-        max-width: 100%;
-        height: auto;
-        margin-left: 0; /* Enlever le décalage */
-    }
+#contact-container {
+    flex-direction: column;
+    gap: 20px; 
+    padding: 15px;
+}
+    
+/* Map */
 
-    /* Formulaire : ajuster pour qu'il prenne toute la largeur */
-    .contact-form {
-        max-width: 100%;
-        margin-left: 0; /* Réinitialiser les marges */
-    }
+#map-container iframe {
+    width: 100%; 
+    height: 300px; 
+}
 
-    /* Réduire la taille des polices pour les petits écrans */
-    .contact-form label,
-    .contact-form input,
-    .contact-form textarea {
-        font-size: 14px;
-    }
+/* Formulaire */
 
-    /* Modifier le texte du bouton pour le rendre plus petit */
-    .contact-form button {
-        font-size: 14px;
-    }
+.contact-form {
+    width: 100%;
+    max-width: 100%; 
+    padding: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
 
-    /* Réduire la taille des titres (h1, h4) */
-    h1 {
-        font-size: 1.8em;
-    }
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    font-size: 14px;
+}
 
-    h4 {
-        font-size: 1em;
-    }
+.contact-form button {
+        font-size: 16px;
+        width: 100%; 
+        padding: 12px;
+}
 
-    /* Réduction des marges et tailles des éléments du footer */
-    footer div {
-        font-size: 0.9em; /* Plus petit texte dans le footer */
-    }
+h1 {
+    font-size: 1.8em;
+}
 
-    footer div h4 {
-        font-size: 1em;
-    }
+/*Footer*/
+
+footer{
+    position: absolute;
+    background-color: #403f3c;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+footer div {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    text-align: left;
+}
+footer div h4, footer div p {
+    width: 100%; 
+    margin: 0; 
+    text-align: left;
+    font-weight: bold; 
+}
+footer div h4 {
+    margin-bottom: 5px; 
+    font-size: 1.1em;
+}
+footer div p {
+    line-height: 1.4;
+}
+.adresse, .apropos {
+    grid-column: 1;
+}
+.contact {
+    grid-column: 2;
+}
+
+/* YouTube Icon */
+
+.youtube-icon {
+    position: absolute;
+    right: 20px;
+    top: 130px;  bottom: 20px;
+    right: 50px;
+    font-size: 50px;
+    text-decoration: none;
+}
 }

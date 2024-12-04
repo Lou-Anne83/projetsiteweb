@@ -107,11 +107,12 @@ footer {
     color: #FFFFFF;
     padding: 20px 30px;
     display: flex;
-    justify-content: space-between; /* Sépare les colonnes et l'icône */
-    align-items: center; /* Centre verticalement les éléments */
+    justify-content: space-between; 
+    align-items: center; 
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
+    margin-top: auto; 
 }
 footer div {
     flex: 1;
@@ -143,8 +144,12 @@ footer div p {
     justify-content: center;
     align-items: center;
     font-size: 50px;
-    text-decoration: none; /* Supprime le soulignement */
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px; /* Fixée au bas du footer */
+    right: 20px;
 }
+
 .youtube-icon i {
     font-size: 80px;
     color: white;
@@ -217,7 +222,7 @@ footer div {
     flex-direction: column; 
     text-align: left;
 }
-footer div h3, footer div p {
+footer div h4, footer div p {
     width: 100%; 
     margin: 0; 
     text-align: left;
@@ -240,7 +245,7 @@ footer div p {
 /* YouTube Icon */
 
 .youtube-icon {
-    position: absolute;
+    position: static;
     right: 20px;
     top: 130px;  bottom: 20px;
     right: 50px;

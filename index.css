@@ -146,7 +146,7 @@ footer div p {
     font-size: 50px;
     text-decoration: none;
     position: absolute;
-    bottom: 20px; /* Fixée au bas du footer */
+    bottom: 20px; 
     right: 20px;
 }
 
@@ -154,7 +154,7 @@ footer div p {
     font-size: 80px;
     color: white;
     transition: transform 0.3s ease, color 0.3s ease;
-    text-decoration: none; /* Supprime le soulignement */
+    text-decoration: none; 
 }
 .youtube-icon i:hover {
     transform: scale(1.2);
@@ -187,7 +187,6 @@ body {
 }
 .forme p {
     order: 1; 
-    text-align: justify, center;
 }
 .forme h2 {
     font-size: 20px !important; 

@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
 /* Header */
 header {
     width: 100%;
@@ -19,7 +18,7 @@ header {
     padding: 10px 0;
     padding-top: 5px;
     text-align: center;
-    height: auto;
+    height: auto; 
 }
 
 header h1 {
@@ -34,13 +33,11 @@ header h1 {
     width: 100%;
     margin: 5px auto;
 }
-
-/* Navigation */
 .navigation-bar { 
     display: flex;
     justify-content: center;
-    gap: 20px;
-    padding: 0;
+    gap: 300px;
+    padding: 0; 
 }
 
 .navigation-bar a { 
@@ -48,13 +45,15 @@ header h1 {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 20px;
+    font-size:25px;
+
 }
 
 .navigation-bar a:hover {
     color:white; 
     text-decoration: underline;
 }
+
 
 /* Contenu de la page */
 section {

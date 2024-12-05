@@ -98,7 +98,6 @@ header h1 {
 
 .text-content p {
     color: #000;
-    text-align: justify;
     margin-top: -10px; /* Remonter encore un peu le texte des paragraphes */
     font-size: 1.1em;
 }

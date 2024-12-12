@@ -189,6 +189,16 @@ footer div p {
 body {
     overflow-x: hidden;
 }
+.navigation-bar {
+    justify-content: space-between; 
+    gap: 15px; 
+}
+
+.navigation-bar a {
+    font-size: 18px; 
+    flex: 1; 
+    text-align: center; 
+}
     
 /* Contact Container */
 
@@ -368,9 +378,8 @@ footer div p {
     body {
         overflow-x: hidden; 
    }
-/*header*/
-    
-.navigation-bar {
+
+   .navigation-bar {
     justify-content: space-between; 
     gap: 15px; 
 }
@@ -411,16 +420,15 @@ footer div p {
     .small-item img {
         width: 100%; /* Réduction pour les très petites tailles */
     }
-}
 
-/* Résolution du chevauchement pour la section Galerie */
-#galerie {
-    margin-top: 20px; /* Augmenter la marge supérieure */
-    padding-top: 30px; /* Espace interne pour éviter tout chevauchement */
-}
 
-/* Espacement supplémentaire dans la section Galerie */
-.row {
-    gap: 30px; /* Ajout d'espace entre les images et les textes */
-    margin-bottom: 40px; /* Ajout d'espace sous chaque ligne */
+    .small-images {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .small-item h2 {
+        font-size: 0.9em;
+        word-wrap: break-word;
+    }
 }

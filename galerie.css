@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-/* Header */
+/* header */
 header {
     width: 100%;
     background-color: #28658B;
@@ -59,7 +59,6 @@ header h1 {
     color:white; 
     text-decoration: underline;
 }
-
 /* Section galerie */
 #galerie {
     padding: 20px;
@@ -369,6 +368,17 @@ footer div p {
     body {
         overflow-x: hidden; 
    }
+
+   .navigation-bar {
+    justify-content: space-between; 
+    gap: 15px; 
+}
+
+.navigation-bar a {
+    font-size: 18px; 
+    flex: 1; 
+    text-align: center; 
+}
 
     .small-images {
         display: grid;

@@ -368,8 +368,9 @@ footer div p {
     body {
         overflow-x: hidden; 
    }
-
-   .navigation-bar {
+/*header*/
+    
+.navigation-bar {
     justify-content: space-between; 
     gap: 15px; 
 }

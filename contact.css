@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 /* Header */
 header {
     width: 100%;
@@ -53,7 +54,6 @@ header h1 {
     color:white; 
     text-decoration: underline;
 }
-
 
 /* Contenu de la page */
 section {
@@ -170,6 +170,7 @@ footer {
     gap: 20px;
     position: relative;
     margin-top: auto; 
+
 }
 footer div {
     flex: 1;
@@ -222,6 +223,16 @@ footer div p {
 
 body {
     overflow-x: hidden;
+}
+.navigation-bar {
+    justify-content: space-between; 
+    gap: 15px; 
+}
+
+.navigation-bar a {
+    font-size: 18px; 
+    flex: 1; 
+    text-align: center; 
 }
     
 /* Contact Container */
